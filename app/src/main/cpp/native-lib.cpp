@@ -8,7 +8,8 @@ Java_com_example_blockchn_MainActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     Blockchain bChain = Blockchain();
-    std::string tmp = std::to_string((rand() % 1000000));
+    std::string tmp = std::to_string((int)(rand() % 10000));
+    tmp="";
     tmp+=bChain.AddBlock(Block(1, tmp));
 
 

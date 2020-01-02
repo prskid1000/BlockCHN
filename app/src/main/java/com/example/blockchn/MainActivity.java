@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... strings) {
-            publishProgress("Mining under process*");
+            publishProgress("Mining under process");
             result="";
             result=stringFromJNI();
             return result;
