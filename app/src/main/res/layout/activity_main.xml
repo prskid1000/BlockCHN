@@ -4,41 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C51162"
+    android:background="@android:color/holo_red_light"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/sample_text"
-        android:layout_width="347dp"
-        android:layout_height="338dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="95dp"
-        android:background="#FFFFFF"
-        android:textColor="#81B6C5"
+        android:layout_width="335dp"
+        android:layout_height="332dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#e12048"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="179dp"
         android:layout_height="71dp"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="116dp"
-        android:layout_marginBottom="125dp"
         android:backgroundTint="#DD2C00"
+        android:fontFamily="cursive"
         android:text="@string/mine"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sample_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="cursive"
+        android:text="@string/blockchn"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

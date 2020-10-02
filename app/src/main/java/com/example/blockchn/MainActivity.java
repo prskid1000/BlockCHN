@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
         Button btn = findViewById(R.id.button);
+        getSupportActionBar().hide();
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BlockCHN</string>
     <string name="mine">MINE</string>
+    <string name="blockchn">BlockCHN</string>
 </resources>
